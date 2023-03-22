@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="decription"
+    content="Här finns fyra bilder från katthotellet. Bilderna är tagna av kund och personal på hotellet.">
+  <title>Klösträdets galleri</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="galleri.css">
+
+</head>
+
+<body class="gallery">
+  <header>
+    <h1>Klösträdets Katthotell</h1>
+  </header>
+  <!-- Viktiga länkar -->
+
+  <nav class="navbar">
+    <ul class="links">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="bokning.html">Boka</a></li>
+      <li><a href="pris.html">Pris</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="gallery_intro">
+      <h2>Här kan ni se ett urval av bilder från vårt fantastiska hotell!</h2>
+      <p>Bilderna som visas här är en blandning av bilder skickade av nöjda kunder, och våra egna bilder. Vi har
+        tillåtelse från kunder som skickat bilderna att använda dom.</p>
+    </section>
+    <div class="gallery_pictures">
+      <img alt="Svartvit katt som tittar ut genom ett stängsel"
+        srcset="images/Morris300px.jpg 300w, images/Morris650px.jpg 650w" sizes="(max-width:650px) 300px, 650px"
+        src="images/Morris.jpg">
+
+      <img alt="Vit katt med tass över ögonen" srcset="images/vitkatt300px.jpg 300w, images/vitkatt650px.jpg 650w"
+        sizes="(max-width:650px) 300px, 650px" src="images/vitkatt.jpg">
+
+      <img alt="Svartvitkatt och sköldpaddsfärgad katt hänger på en byrå"
+        srcset="images/morzoemobel300px.jpg 300w, images/morzoemobel650px.jpg 650w"
+        sizes="(max-width:650px) 300px, 650px" src="images/morzoemobel.jpg">
+
+      <img alt="Söt katt med fjäril på nosen"
+        srcset="images/fjarilkattbeskuren300px.jpg 300w, images/fjarilkattbeskuren650px.jpg 650w"
+        sizes="(max-width:650px) 300px, 650px" src="images/fjarilkattbeskuren.jpg">
+    </div>
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+    <h2 class="footerheadline">Kontakt och öppettider</h2>
+    <ul class="contact">
+      <li>Mejl: Klostradet-Katthotell@info.se</li>
+      <li>Telefonnr: 070-0000000</li>
+      <li>Adress: Klösträdet 33, Kattered</li>
+    </ul>
+    <p>Vi försöker att svara så fort vi kan på mejl och telefon.</p>
+    <p id="copyright">Webbsidan designad och skriven av Ivanna Junuzovic</p>
+  </footer>
+</body>
+
+</html>

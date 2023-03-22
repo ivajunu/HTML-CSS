@@ -1,0 +1,179 @@
+.index_priser_boka{
+  background: url(images/hus.jpg);
+  font-family: garamond, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+  }
+
+/* meny och länkar */
+
+header {
+  background-color: #94ECBEe6;
+  padding: 10px;
+  margin: 0%;
+  text-align:left;
+  border: 0;
+}
+
+header h1 {
+  font-size: 60px;
+  font-weight: 300;
+  padding-left: 50px;
+  color: #000000;
+  font-family: garamond;
+  font-style: italic;
+}
+
+.navbar {
+  background-color:#94ecbeb3;
+  margin-top: 0%;
+}
+
+.links {
+  background-color:rgba(148, 236, 190, 0.5);
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 10px;
+}
+
+/* länkar navbar */
+
+.links li a {
+  text-decoration: none;
+  color:#1E3F20;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.links li a:hover {
+  color:#458649;
+}
+
+/* Brödtext och aside */
+
+.mainheader {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  grid-area: mainheader;
+}
+
+.intro, .hosts {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  margin: 30px 10em 10px 7.5em;
+  background-color: #94ecbee6;
+  padding: 20px;
+}
+
+.hosts {
+  display:grid;
+  grid-area: vardar;
+  grid-template-columns: 33% 60%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "mainheader bild"
+  "vardar bild"
+  ;
+}
+
+
+/* bild på zoey och morris */
+
+.zoeymorrisfront {
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+  grid-area: bild;
+}
+
+/* länkar i brödtexten */
+
+.pricesgallery {
+  text-decoration: none;
+  color:#2c2929;
+}
+
+a:hover {
+  color: #437546;
+}
+
+/* footer */
+
+footer {
+  background: #94ECBEe6;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerheadline {
+  font-size: 25px;
+  font-style: italic;
+  margin: 0%;
+}
+
+.contact {
+  list-style-type: none;
+}
+
+#copyright {
+  text-align: end;
+  margin: 0;
+}
+
+
+/* Mediaqueries */
+
+
+@media (min-width: 360px) and (max-width: 500px) {
+
+  header, .navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+  }
+
+  .navbar, .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro, .hosts {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .mainheader {
+    font-size: 25px;
+  }
+
+  footer {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  body {
+    background-color: whitesmoke;
+  }
+}
+
+@media (min-width:500px) and (max-width: 960px) {
+  .intro, .hosts {
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

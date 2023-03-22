@@ -1,0 +1,93 @@
+
+/* Brödtext */
+
+
+.prices {
+  color: #1E3F20;
+  background-color: #94ecbee6;
+  font-weight: 700;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns:33% 33% 33%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "info info info"
+  "sommar övrig extra"
+  "sommar övrig extra"
+  ;
+  margin: 30px 5em;
+  padding: 20px;
+}
+
+.prices_info {
+  font-size: 45px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  margin: 0%;
+}
+
+.info {
+  grid-area: info;
+  margin: 50px;
+}
+
+.summerprices {
+  grid-area: sommar;
+  margin-left: 30px;
+}
+
+.ordinarie {
+  grid-area: övrig;
+}
+
+.extrakostnader {
+  grid-area: extra;
+}
+
+.lists_prices {
+  list-style-type:circle;
+}
+
+.headline_prices {
+  font-size: 25px;
+  padding: 0%;
+  margin: 0%;
+  text-decoration: underline;
+}
+
+@media (min-width: 300px) and (max-width:500px) {
+
+  .info {
+    margin: 10px;
+  }
+
+  .prices {
+    font-size: 16px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .summerprices {
+    margin: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width:960px) {
+
+  .info {
+    font-size: 18px;
+  }
+
+  .prices {
+    font-size: 18px;
+    margin: 30px;
+    padding: 10px;
+    display: table;
+  }
+
+  .summerprices {
+    margin: 0%;
+  }
+}

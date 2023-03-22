@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bokningssida för katthotellet. Här kan man boka rum för sina katter.">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="bokning.css">
+  <title>Klösträdet bokning</title>
+</head>
+
+<body class="index_priser_boka">
+  <header>
+    <h1>Klösträdets Katthotell</h1>
+  </header>
+
+  <nav class="navbar">
+    <ul class="links">
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="bokning.html">Boka</a></li>
+      <li><a href="pris.html">Pris</a></li>
+      <li><a href="galleri.html">Galleri</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form class="booking" action="https://www.example.com/" method="POST">
+      <fieldset>
+        <legend>Boka ditt rum på katthotellet!</legend>
+        <label for="fullname">Namn & efternamn</label>
+        <input id="fullname" type="text" name="name" placeholder="Namn & Efternamn">
+        <label for="data">Personuppgifter</label>
+        <input id="data" type="text" placeholder="Personnummer">
+        <label for="vistelse">Datum för ankomst</label>
+        <input id="vistelse" type="date">
+        <label for="date">Datum för avgång</label>
+        <input id="date" type="date">
+        <label for="antal">Hur många katter vill du boka för?</label>
+        <input id="antal" type="number" min="1" max="5">
+        <label for="meddelande">Har din katt några allergier/sjukdomar eller annat viktigt vi behöver
+          veta?</label>
+        <textarea id="meddelande" cols="60" rows="5"></textarea>
+        <label for="email">Din mailadress</label>
+        <input id="email" type="email">
+        <button class="send">Boka rum</button>
+      </fieldset>
+    </form>
+
+
+  </main>
+
+  <footer>
+    <h2 class="footerheadline">Kontakt och öppettider</h2>
+    <ul class="contact">
+      <li>Mejl: Klostradet-Katthotell@info.se</li>
+      <li>Telefonnr: 070-0000000</li>
+      <li>Adress: Klösträdet 33, Kattered</li>
+    </ul>
+    <p>Vi försöker att svara så fort vi kan på mejl och telefon.</p>
+    <p id="copyright">Webbsidan designad och skriven av Ivanna Junuzovic</p>
+  </footer>
+
+</body>
+
+</html>

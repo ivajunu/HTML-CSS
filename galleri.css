@@ -1,0 +1,48 @@
+
+/* galleribilder */
+
+.gallery {
+  background-color:rgb(242, 253, 245);
+  font-family: garamond, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.gallery_intro {
+  background-color:#94ecbee6;
+  margin: 50px;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.gallery_intro h2 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.gallery_pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap-reverse;
+  gap: 30px;
+  margin: 10px 0;
+  }
+
+  @media (min-width:300px) and (max-width:650px){
+
+    .gallery_intro {
+      margin: 20px;
+      font-size: 20px;
+    }
+
+    .gallery_pictures {
+      margin: 0%;
+    }
+  }
+
+  @media (min-width:650px) and (max-width: 960px) {
+
+    .gallery_intro {
+      font-size: 22px;
+      margin: 40px;
+    }
+  }
